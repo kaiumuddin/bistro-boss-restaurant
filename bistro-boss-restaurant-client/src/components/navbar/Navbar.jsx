@@ -1,4 +1,4 @@
-import { ModeToggle } from "./mod-toggle";
+import { ModeToggle } from "../theme/mode-toggle";
 
 /**
  * v0 by Vercel.
@@ -11,53 +11,55 @@ import {
     NavigationMenuList,
     NavigationMenu,
 } from "@/components/ui/navigation-menu";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
-export default function Component() {
+export default function Navbar() {
     return (
-        <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6  backdrop-blur-md">
-            <a className="mr-6 hidden lg:flex" href="#">
-                <MenuIcon className="h-6 w-6" />
-                <span className="sr-only">Restaurant Name</span>
-            </a>
-            <div className="flex w-full justify-center">
-                <NavigationMenu className="hidden lg:flex">
-                    <NavigationMenuList>
-                        <NavigationMenuLink asChild>
-                            <Button variant="link">Home</Button>
-                        </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
-                            <Button variant="link">Menu</Button>
-                        </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
-                            <Button variant="link">About Us</Button>
-                        </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
-                            <Button variant="link">Contact</Button>
-                        </NavigationMenuLink>
-                    </NavigationMenuList>
-                </NavigationMenu>
-            </div>
-            <div className="ml-auto flex items-center justify-center gap-4">
-                <a
-                    className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-                    href="#"
-                >
-                    <FacebookIcon className="h-6 w-6" />
+        <header className="backdrop-blur-md">
+            <div className="container flex h-20 w-full shrink-0 items-center">
+                <a className="mr-6 hidden lg:flex" href="#">
+                    <MenuIcon className="h-6 w-6" />
+                    <span className="sr-only">Restaurant Name</span>
                 </a>
-                <a
-                    className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-                    href="#"
-                >
-                    <TwitterIcon className="h-6 w-6" />
-                </a>
-                <a
-                    className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-                    href="#"
-                >
-                    <InstagramIcon className="h-6 w-6" />
-                </a>
-                <ModeToggle />
+                <div className="flex w-full justify-center">
+                    <NavigationMenu className="hidden lg:flex">
+                        <NavigationMenuList>
+                            <NavigationMenuLink asChild>
+                                <Button variant="link">Home</Button>
+                            </NavigationMenuLink>
+                            <NavigationMenuLink asChild>
+                                <Button variant="link">Menu</Button>
+                            </NavigationMenuLink>
+                            <NavigationMenuLink asChild>
+                                <Button variant="link">About Us</Button>
+                            </NavigationMenuLink>
+                            <NavigationMenuLink asChild>
+                                <Button variant="link">Contact</Button>
+                            </NavigationMenuLink>
+                        </NavigationMenuList>
+                    </NavigationMenu>
+                </div>
+                <div className="ml-auto flex items-center justify-center gap-4">
+                    <a
+                        className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                        href="#"
+                    >
+                        <FacebookIcon className="h-6 w-6" />
+                    </a>
+                    <a
+                        className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                        href="#"
+                    >
+                        <TwitterIcon className="h-6 w-6" />
+                    </a>
+                    <a
+                        className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                        href="#"
+                    >
+                        <InstagramIcon className="h-6 w-6" />
+                    </a>
+                    <ModeToggle />
+                </div>
             </div>
         </header>
     );
@@ -141,8 +143,4 @@ function TwitterIcon(props) {
             <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
         </svg>
     );
-}
-
-{
-    /* <ModeToggle /> */
 }

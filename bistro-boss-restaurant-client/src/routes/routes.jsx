@@ -1,5 +1,5 @@
 import ClientLayout from "@/layout/ClientLayout";
-import HomePage from "@/pages/client_pages/HomePage";
+import HomePage from "@/pages/client/HomePage";
 import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
