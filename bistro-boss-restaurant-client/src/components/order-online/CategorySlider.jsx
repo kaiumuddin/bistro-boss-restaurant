@@ -39,7 +39,7 @@ const CategorySlider = () => {
     ];
     let slidePerView = 1;
     return (
-        <div className="container py-8">
+        <div className="py-8">
             <Swiper
                 slidesPerView={slidePerView}
                 spaceBetween={30}
@@ -49,10 +49,10 @@ const CategorySlider = () => {
                 }}
                 breakpoints={{
                     450: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                     },
                     768: {
-                        slidesPerView: 2,
+                        slidesPerView: 4,
                     },
                     1440: {
                         slidesPerView: 4,

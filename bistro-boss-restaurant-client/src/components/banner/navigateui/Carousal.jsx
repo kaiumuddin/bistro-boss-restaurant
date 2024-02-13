@@ -44,7 +44,7 @@ export const Carousel1 = () => {
             <div className="mx-auto w-full h-[340px] md:h-[670px] flex flex-col lg:flex-row items-center overflow-hidden gap-5 lg:gap-10 ">
                 <div className="relative overflow-hidden">
                     {/* arrow */}
-                    <div className="absolute w-full h-full flex items-center justify-between z-50 px-5">
+                    <div className="absolute w-full h-full flex items-center justify-between z-5 px-5">
                         {/* arrow left */}
                         <button
                             onClick={prevSlider}
@@ -99,7 +99,7 @@ export const Carousel1 = () => {
                         </button>
                     </div>
                     {/* dots */}
-                    <div className="flex justify-center items-center rounded-full z-50 absolute bottom-4 w-full gap-1">
+                    <div className="flex justify-center items-center rounded-full z-5 absolute bottom-4 w-full gap-1">
                         {sliderImages.map((_, index) => (
                             <button
                                 key={index}
