@@ -15,7 +15,7 @@ import { Button } from "../ui/button";
 
 export default function Navbar() {
     return (
-        <header className="backdrop-blur-md">
+        <header className="fixed z-10 w-full backdrop-blur-sm">
             <div className="container flex h-20 w-full shrink-0 items-center">
                 <a className="mr-6 hidden lg:flex" href="#">
                     <MenuIcon className="h-6 w-6" />
