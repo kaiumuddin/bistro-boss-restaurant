@@ -40,7 +40,7 @@ export const Carousel1 = () => {
     }, [currentSlider]);
 
     return (
-        <>
+        <section className="pb-8">
             <div className="mx-auto max-w-[1920px] h-[340px] md:h-[670px] flex flex-col lg:flex-row items-center overflow-hidden gap-5 lg:gap-10 ">
                 <div className="relative overflow-hidden">
                     {/* arrow */}
@@ -135,7 +135,7 @@ export const Carousel1 = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center items-center gap-3 p-2">
+            <div className="flex justify-center items-center gap-3 mt-2">
                 {/* sliders */}
                 {sliderImages.map((slide, inx) => (
                     <img
@@ -151,6 +151,6 @@ export const Carousel1 = () => {
                     />
                 ))}
             </div>
-        </>
+        </section>
     );
 };
