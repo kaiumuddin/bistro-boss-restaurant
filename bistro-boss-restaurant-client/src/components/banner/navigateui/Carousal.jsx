@@ -41,7 +41,7 @@ export const Carousel1 = () => {
 
     return (
         <>
-            <div className="mx-auto w-full h-[340px] md:h-[670px] flex flex-col lg:flex-row items-center overflow-hidden gap-5 lg:gap-10 ">
+            <div className="mx-auto max-w-[1920px] h-[340px] md:h-[670px] flex flex-col lg:flex-row items-center overflow-hidden gap-5 lg:gap-10 ">
                 <div className="relative overflow-hidden">
                     {/* arrow */}
                     <div className="absolute w-full h-full flex items-center justify-between z-5 px-5">

@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 const BistroBoss = () => {
     return (
         <section className="py-32 px-32 bg-[url('./assets/home/chef-service.jpg')] bg-cover">
-            <div className="backdrop-blur-md container gap-5 mx-auto flex flex-col items-center px-32 py-16 text-center   ">
+            <div className="bg-background/75  container gap-5 mx-auto flex flex-col items-center px-32 py-16 text-center   ">
                 <h1 className="text-4xl font-bold leadi sm:text-5xl">
                     Bistro Boss
                 </h1>
