@@ -4,10 +4,10 @@ import featuredImg from "../../assets/home/featured.jpg";
 import { Button } from "../ui/button";
 
 const Featured = () => {
-    const bg = `'./assets/home/featured.jpg'`;
+    // const bg = `'./assets/home/featured.jpg'`;
     return (
         <div
-            className={`bg-[url(${bg})] bg-cover bg-no-repeat bg-center bg-fixed`}
+            className={`bg-[url('./assets/home/featured.jpg')] bg-cover bg-no-repeat bg-center bg-fixed`}
         >
             <div className="w-full h-full backdrop-brightness-50 py-8">
                 <div className="container space-y-4">
