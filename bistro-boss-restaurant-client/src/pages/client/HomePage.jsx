@@ -3,6 +3,7 @@ import ChefRecommends from "@/components/chef-recommends/ChefRecommends";
 import Featured from "@/components/featured/Featured";
 import FromOurMenu from "@/components/from-our-menu/FromOurMenu";
 import OrderOnline from "@/components/order-online/OrderOnline";
+import Testimonials from "@/components/testimonials/Testimonials";
 
 export default function HomePage() {
     return (
@@ -12,6 +13,7 @@ export default function HomePage() {
             <FromOurMenu />
             <ChefRecommends />
             <Featured />
+            <Testimonials />
         </>
     );
 }
