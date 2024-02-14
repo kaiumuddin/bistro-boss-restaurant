@@ -22,7 +22,7 @@ const MenuList = ({ path, category }) => {
         return <MenuItem key={item.__id} item={item} />;
     });
 
-    return <div className="grid md:grid-cols-2 gap-4 py-8">{content}</div>;
+    return <div className="grid md:grid-cols-2 gap-4">{content}</div>;
 };
 
 const MenuItem = ({ item }) => {
@@ -37,7 +37,7 @@ const MenuItem = ({ item }) => {
                 <h3 className="uppercase">{item.name}</h3>
                 <p className="text-sm">{item.recipe}</p>
             </div>
-            <p>{item.price}</p>
+            <p>${item.price}</p>
         </div>
     );
 };
