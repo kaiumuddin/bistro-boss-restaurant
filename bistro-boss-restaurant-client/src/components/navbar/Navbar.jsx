@@ -12,6 +12,7 @@ import {
     NavigationMenu,
 } from "@/components/ui/navigation-menu";
 import { Button } from "../ui/button";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     return (
@@ -28,7 +29,9 @@ export default function Navbar() {
                                 <Button variant="link">Home</Button>
                             </NavigationMenuLink>
                             <NavigationMenuLink asChild>
-                                <Button variant="link">Menu</Button>
+                                <Link to={"/menu"}>
+                                    <Button variant="link">Menu</Button>
+                                </Link>
                             </NavigationMenuLink>
                             <NavigationMenuLink asChild>
                                 <Button variant="link">About Us</Button>
