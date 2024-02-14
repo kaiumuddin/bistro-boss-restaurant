@@ -99,7 +99,7 @@ export const Carousel1 = () => {
                         </button>
                     </div>
                     {/* dots */}
-                    <div className="flex justify-center items-center rounded-full z-5 absolute bottom-4 w-full gap-1">
+                    <div className="flex justify-center items-center rounded-full z-50 absolute bottom-4 w-full gap-1">
                         {sliderImages.map((_, index) => (
                             <button
                                 key={index}
