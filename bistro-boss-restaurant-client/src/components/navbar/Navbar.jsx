@@ -39,25 +39,16 @@ export default function Navbar() {
                         </NavigationMenuList>
                     </NavigationMenu>
                 </div>
-                <div className="ml-auto flex items-center justify-center gap-4">
-                    <a
-                        className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-                        href="#"
-                    >
+                <div className="flex gap-4 justify-center items-center">
+                    <Button variant="link" size="icon">
                         <FacebookIcon className="h-6 w-6" />
-                    </a>
-                    <a
-                        className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-                        href="#"
-                    >
+                    </Button>
+                    <Button variant="link" size="icon">
                         <TwitterIcon className="h-6 w-6" />
-                    </a>
-                    <a
-                        className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-                        href="#"
-                    >
+                    </Button>
+                    <Button variant="link" size="icon">
                         <InstagramIcon className="h-6 w-6" />
-                    </a>
+                    </Button>
                     <ModeToggle />
                 </div>
             </div>
