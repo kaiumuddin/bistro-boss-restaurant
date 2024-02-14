@@ -1,5 +1,6 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import SectionTitle from "../section-title/SectionTitle";
+import MenuList from "../menulist/MenuList";
 
 const FromOurMenu = () => {
     return (
@@ -8,6 +9,7 @@ const FromOurMenu = () => {
                 subtitle={"---Check it out---"}
                 title={"FROM OUR MENU"}
             />
+            <MenuList path={"data/menu.json"} category={"popular"} />
         </div>
     );
 };
