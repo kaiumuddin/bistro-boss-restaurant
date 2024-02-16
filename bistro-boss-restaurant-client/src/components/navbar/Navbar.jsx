@@ -26,7 +26,9 @@ export default function Navbar() {
                     <NavigationMenu className="hidden lg:flex">
                         <NavigationMenuList>
                             <NavigationMenuLink asChild>
-                                <Button variant="link">Home</Button>
+                                <Link to={"/"}>
+                                    <Button variant="link">Home</Button>
+                                </Link>
                             </NavigationMenuLink>
                             <NavigationMenuLink asChild>
                                 <Link to={"/menu"}>
